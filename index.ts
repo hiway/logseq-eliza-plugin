@@ -41,7 +41,6 @@ async function main() {
 
   var eliza = new ElizaNode()
   const shortcut = logseq.settings!["elizaShortcut"]
-  const emoji = logseq.settings!["elizaEmoji"]
 
   logseq.App.registerCommandShortcut({
     binding: shortcut,
@@ -50,6 +49,7 @@ async function main() {
     async () => {
       const current_block = await logseq.Editor.getCurrentBlock()
       const input = await logseq.Editor.getEditingBlockContent()
+      const emoji = logseq.settings!["elizaEmoji"]
 
       if (input) {
         const output = eliza.transform(input)
