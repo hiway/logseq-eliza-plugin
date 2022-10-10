@@ -13,9 +13,9 @@ const settingsSchema: SettingSchemaDesc[] = [
   {
     key: "elizaEmoji",
     type: "string",
-    default: "🤖",
+    default: "",
     title: "Emoji",
-    description: "Eliza emoji to insert before responses",
+    description: "Emoji to insert before responses, can be blank.",
   },
 ]
 
