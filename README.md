@@ -32,7 +32,9 @@ as it would be found in psychotherapist's session:
 > insights and reasoning ability. 
 > But again, these are the speaker's contribution to the conversation. 
 
+## Usage
 
+![Plugin Demo](/logseq-eliza-plugin-demo.gif "Plugin Demo")
 ## Installation
 
 ### Preparation
