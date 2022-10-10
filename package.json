@@ -1,6 +1,6 @@
 {
   "name": "logseq-eliza-plugin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Your private Rogerian therapist at your Logseq",
   "author": "Harshad Sharma (@hiway)",
   "license": "MIT",
