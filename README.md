@@ -68,7 +68,7 @@ You can change the shortcut in settings.
 
 ## Issues
 
-See the [open issues](https://github.com/hiway/logseq-youtube-plugin/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/hiway/logseq-eliza-plugin/issues) for a full list of proposed features (and known issues).
 
 ## License
 
