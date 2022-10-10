@@ -35,6 +35,11 @@ as it would be found in psychotherapist's session:
 ## Usage
 
 ![Plugin Demo](/logseq-eliza-plugin-demo.gif "Plugin Demo")
+
+**Type in your input for Eliza and press `Ctrl+Shift+Enter`**
+
+You can change the shortcut in settings.
+
 ## Installation
 
 ### Preparation
