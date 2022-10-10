@@ -10,6 +10,13 @@ const settingsSchema: SettingSchemaDesc[] = [
     title: "Shortcut",
     description: "Keyboard shortcut to call Eliza",
   },
+  {
+    key: "elizaEmoji",
+    type: "string",
+    default: "🤖",
+    title: "Emoji",
+    description: "Eliza emoji to insert before responses",
+  },
 ]
 
 async function settings_are_valid() {
@@ -34,6 +41,7 @@ async function main() {
 
   var eliza = new ElizaNode()
   const shortcut = logseq.settings!["elizaShortcut"]
+  const emoji = logseq.settings!["elizaEmoji"]
 
   logseq.App.registerCommandShortcut({
     binding: shortcut,
@@ -45,7 +53,11 @@ async function main() {
 
       if (input) {
         const output = eliza.transform(input)
-        await logseq.Editor.insertBlock(current_block!.uuid, output, { sibling: false })
+        if (emoji) {
+          await logseq.Editor.insertBlock(current_block!.uuid, `${emoji} ${output}`, { sibling: false })
+        } else {
+          await logseq.Editor.insertBlock(current_block!.uuid, output, { sibling: false })
+        }
         await logseq.Editor.insertBlock(current_block!.uuid, "", { sibling: true })
       }
       else {
