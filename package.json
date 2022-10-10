@@ -1,0 +1,26 @@
+{
+  "name": "logseq-eliza-plugin",
+  "version": "0.0.1",
+  "description": "Your private Rogerian therapist at your Logseq",
+  "author": "Harshad Sharma (@hiway)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./index.html --public-url ./",
+    "build": "parcel build --public-url . --no-source-maps index.html"
+  },
+  "devDependencies": {
+    "@logseq/libs": "^0.0.9",
+    "parcel": "^2.0.0"
+  },
+  "logseq": {
+    "id": "logseq-eliza-plugin",
+    "title": "Eliza",
+    "main": "dist/index.html",
+    "icon": "./icon.png"
+  },
+  "dependencies": {
+    "eliza-core": "^1.2.0-beta.0",
+    "eliza-util": "^1.1.0-alpha.1",
+    "elizanode": "^0.1.0"
+  }
+}
